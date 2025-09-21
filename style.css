@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+nav{
+    display: flex;
+    justify-content: right;
+    background-color: aquamarine;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    padding: 20px;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: blue;
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding: 20px;
+}
+nav ul li a:hover{
+   background-color: chocolate;
+   transition: 0.3s;
+}
+.home-section, .about-section, .skills-section,.projects-section, .contact-section{
+    height: 100vh;
+}
+.home-section{
+    background-color: #ade2f4;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.home-section h1{
+    font-size: 60px;
+}
+.home-section p{
+    font-size: 30px;
+}
+.about-section{
+    background-color: lightgreen;
+    text-align: center;
+
+}
+.about-section h2{
+    padding-top: 40vh;
+    font-size: 60px;
+}
+.about-section p{
+    font-size: 30px;
+}
+.skills-section{
+    background-color: lightpink;
+    text-align: center;
+}
+.skills-section h2{
+    padding-top: 40vh;
+    font-size: 60px;
+}
+.skills-section ul{
+    list-style: none;
+    font-size: 30px;
+}
+.skills-section ul li{
+    padding: 10px;
+}
+
+.projects-section{
+    background-color: lightyellow;
+    text-align: center;
+}
+.projects-section h2{
+    padding-top: 40vh;
+    font-size: 60px;
+}
+.projects-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.projects-container .project{
+    border: 2px solid black;
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+}
+.projects-container .project:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.contact-section{
+    background-color: lightgrey;
+    text-align: center;
+}
+.contact-section form{
+    padding-top: 40vh;
+    font-size: 20px;
+    display: inline-block;
+    text-align: left;
+}
+.contact-section form input, .contact-section form textarea{
+    width: 300px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.contact-section form button{
+    width: 100%;
+    padding: 10px;
+    color: black;
+    background-color: rgb(126, 183, 240);
+    font-size: 20px;
+    cursor: pointer;
+}
+.contact-section form button:hover{
+    background-color: blue;
+    transition: 0.3s;
+    color: white;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: aquamarine;
+    
+    font-size: 20px;
+    font-weight: bold;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+footer a{
+    text-decoration: none;
+    color: blue;
+}
+footer a:hover{
+    color: red;
+    transition: 0.3s;
+}
